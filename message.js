@@ -14,7 +14,7 @@ async function forward_message(client, message, representative_id) {
 function get_message_params(client, conversation_id, recipient_id, message, representative_id) {
   let { category, data, quote_message_id } = message
   let message_id = client.getUUID()
-  if (['PLAIN_TEXT'].includes(category)) data = Buffer.from(data.toString()).toString('base64')
+  if (category === 'PLAIN_TEXT') data = Buffer.from(data.toString()).toString('base64')
   return { conversation_id, recipient_id, message_id, category, data, representative_id, quote_message_id }
 }
 
