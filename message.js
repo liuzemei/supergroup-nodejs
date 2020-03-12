@@ -6,7 +6,6 @@ async function forward_message(client, message, representative_id) {
   let ids = up_to_100_ids(all_user)
   for (let i = 0; i < ids.length; i++) {
     let params = ids[i].map(({ conversation_id, user_id }) => get_message_params(client, conversation_id, user_id, message, representative_id))
-    console.log(params)
     await client._request.post('/messages', params)
   }
   return true
