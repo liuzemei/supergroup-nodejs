@@ -1,7 +1,7 @@
 const DATABASE_CONFIG = {
   host: 'localhost',
   port: 5432,
-  user: 'liuzemei',
+  user: 'lapsed',
   password: 'abcd1234',
   database: 'supergroup_node'
 }
