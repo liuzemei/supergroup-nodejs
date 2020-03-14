@@ -4,7 +4,7 @@ const { MixinSocket } = require('mixin-node-sdk')
 const db = require('./db')
 const forward_message = require('./message')
 
-const client = new MixinSocket(CLIENT_CONFIG)
+const client = new MixinSocket(CLIENT_CONFIG, true)
 
 
 client.get_message_handler = async function (message) {
