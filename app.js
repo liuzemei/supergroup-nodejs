@@ -12,6 +12,7 @@ client.get_message_handler = async function (message) {
   if (!message.action || message.action === 'ACKNOWLEDGE_MESSAGE_RECEIPT' || message.action === 'LIST_PENDING_MESSAGES' || !message.data || !message.data.data) return;
   if (message.error) return console.log(message.error)
   let { data } = message
+  if (!(/^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i.test(user_id))) return
   let { conversation_id, user_id } = data
   await db.add_user(user_id, conversation_id)
   return await forward_message(client, data, user_id)
