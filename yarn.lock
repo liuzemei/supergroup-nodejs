@@ -113,10 +113,10 @@ lodash.once@^4.0.0:
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
-mixin-node-sdk@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/mixin-node-sdk/-/mixin-node-sdk-1.1.1.tgz#e67f93bc1e0fae8874cdba2c76217ed44bd431b6"
-  integrity sha512-zMDhFwRcCVTNEgEvGf6CffTQKXTdx1FEqngNJnaPgOqaRQcyXCcBGH+3C3Uw1PXvU9PllyKNqM/z+tVv4B9meA==
+mixin-node-sdk@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.npm.taobao.org/mixin-node-sdk/download/mixin-node-sdk-1.1.5.tgz#1c17cd33a5860ae97541654910b8d59435109390"
+  integrity sha1-HBfNM6WGCul1QWVJELjVlDUQk5A=
   dependencies:
     axios "^0.19.0"
     int64-buffer "^0.99.1007"
